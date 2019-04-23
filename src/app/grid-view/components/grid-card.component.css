@@ -1,0 +1,21 @@
+.grid-card{
+    display: inline-block;
+    width: 18%;
+    padding: 0 1% 1% 1%;
+    margin: 0 1%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.grid-card__img{
+    width: 100%;
+}
+
+.header h2{
+    color: #2f4c82;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

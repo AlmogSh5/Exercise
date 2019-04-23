@@ -1,0 +1,26 @@
+<div class="movie-details">
+  <div class="title">
+    <h1>
+      <input type="text" [value]="movie?.assignedName" (change)="movie.assignedName = $event.target.value" title="edit">
+    </h1>
+    <img class="delete-icon" src="./assets/delete-icon.png" alt="Delete" (click)="deleteMovie()">
+    <img class="return-icon" src="./assets/return-icon.png" alt="Return" (click)="returnToHome()">
+  </div>
+  <div class="body">
+    <div class="poster">
+      <img [src]="movie?.imgUrl" [alt]="movie?.assignedName">
+    </div>
+    <div class="details">
+      <p>{{movie?.plot}}</p>
+      <div class="detail">Release Date: <span>{{movie?.released}}</span></div>
+      <div class="detail">Runtime: <span>{{movie?.runtime}}</span></div>
+      <div class="detail">Actors: <span>{{movie?.actors}}</span></div>
+      <div class="detail">Director: <span>{{movie?.director}}</span></div>
+      <div class="detail">Genre: <span>{{movie?.genre}}</span></div>
+      <div class="detail">BoxOffice: <span>{{movie?.boxOffice}}</span></div>
+      <div class="detail">Awards: <span>{{movie?.awards}}</span></div>
+      <div class="detail">Country: <span>{{movie?.country}}</span></div>
+      <div class="detail">Language: <span>{{movie?.language}}</span></div>
+    </div>
+  </div>
+</div>

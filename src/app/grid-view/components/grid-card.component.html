@@ -1,0 +1,12 @@
+<a [routerLink]="[routerLinkValue]">
+  <div class="grid-card" >
+    <div class="header">
+      <h2>
+        {{movie.assignedName}}
+      </h2>
+    </div>
+    <div class="body">
+      <img [src]="movie.imgUrl" [alt]="movie.assignedName" class="grid-card__img">
+    </div>
+  </div>
+</a>
